@@ -1,19 +1,21 @@
 import java.util.Objects;
 
 public class Estatua implements ItemASerEmbaladoIF{
-    public Estatua(String material, double base, double altura, double peso) {
+    public Estatua(String material, double base, double altura, double peso) throws Exception {
         this.material = material;
         this.base = base;
         this.altura = altura;
         this.peso = peso;
 
         if (material == null){
-
+            throw new Exception("Material tem que ser informado");
         }
         if (material == ""){
+            throw new Exception("Material tem que ser informado");
 
         }
         if (base <= 0){
+            throw new Exception();
 
         }
         if (altura <= 0){
