@@ -15,11 +15,13 @@ public class Estatua implements ItemASerEmbaladoIF{
 
         }
         if (base <= 0){
-            throw new Exception();
-
+            throw new Exception("Base/altura tem que ser maior que zero");
         }
         if (altura <= 0){
-
+            throw new Exception("Base/altura tem que ser maior que zero");
+        }
+        if (peso <= 0){
+            throw new Exception("Peso tem que ser maior que zero");
         }
     }
 
